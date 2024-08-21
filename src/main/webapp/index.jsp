@@ -150,22 +150,22 @@
                 <form id="updatebook2">
                     <div class="mb-3">
                         <label for="bookName" class="form-label">Book Name</label>
-                        <input type="text" class="form-control" id="bookName2" name="bookName" required>
+                        <input type="text" class="form-control" id="bookName2" name="bookName2" required>
                     </div>
                     <div class="mb-3">
                         <label for="author" class="form-label">Author</label>
-                        <input type="text" class="form-control" id="author2" name="author" required>
+                        <input type="text" class="form-control" id="author2" name="author2" required>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="price2" name="price" step="0.01" required>
+                        <input type="number" class="form-control" id="price2" name="price2" step="0.01" required>
                         <input type="hidden" id="id2" name="id2" value="">
                         <input type="hidden" name="event" value="updatebook">
 
                     </div>
                     <div class="mb-3">
                         <label for="publisher" class="form-label">Publisher</label>
-                        <input type="text" class="form-control" id="publisher2" name="publisher" required>
+                        <input type="text" class="form-control" id="publisher2" name="publisher2" required>
                     </div>
                     <div class="mb-3">
                         <label for="isbn" class="form-label">ISBN</label>
@@ -383,9 +383,10 @@
         $("#updatebook2").submit(function(event){
             event.preventDefault();
             var formData = $(this).serialize();
+            var formData = $(this).serialize();
             $.ajax({
                 url: "bookServlet",
-                type: "POST",
+                type: "post",
                 data: formData,
                 success: function(response){
                     if(response.trim()=="done"){
