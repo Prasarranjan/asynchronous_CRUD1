@@ -29,7 +29,7 @@ git clone https://github.com/Prasarranjan/asynchronous_CRUD1.git
 Import the project into your preferred IDE (e.g., IntelliJ IDEA or Eclipse).
 Configure the web.xml and database connection parameters as needed.
 Deploy the project on Tomcat.
-Access the application via http://localhost:8080/library-management/.
+Access the application via http://localhost:8080/library-management/.(will not work as its not deployed till now )
 Usage
 Add a new book: Fill in the book details and click on 'Add Book'.
 View all books: The homepage displays the list of books.
